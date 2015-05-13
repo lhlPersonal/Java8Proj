@@ -16,17 +16,17 @@
 /*     */   {
 /*     */     try
 /*     */     {
-/* 635 */       this.val$begin.await();
+/* 635 */      // this.val$begin.await();
 /*     */ 
-/* 637 */       Thread.sleep(this.val$threadLocalRandom.nextInt(5) * 1000);
-/* 638 */       ThreadTest.logger.info(MessageFormat.format(
-/* 639 */         "Count down thread {0} was finished!", new Object[] { 
-/* 640 */         Thread.currentThread().getName() }));
+/* 637 */      // Thread.sleep(this.val$threadLocalRandom.nextInt(5) * 1000);
+///* 638 */       ThreadTest.logger.info(MessageFormat.format(
+///* 639 */         "Count down thread {0} was finished!", new Object[] { 
+///* 640 */         Thread.currentThread().getName() }));
 /*     */     }
-/*     */     catch (InterruptedException e) {
+/*     */     catch (Exception e) {
 /* 643 */       e.printStackTrace();
 /*     */     } finally {
-/* 645 */       this.val$end.countDown();
+/* 645 */      // this.val$end.countDown();
 /*     */     }
 /*     */   }
 /*     */ }

@@ -16,18 +16,18 @@
 /*     */   {
 /*     */     try
 /*     */     {
-/* 659 */       this.val$s.acquire();
-/* 660 */       ThreadTest.logger.info(MessageFormat.format(
-/* 661 */         "Semaphore thread {0} was assigned!", new Object[] { 
-/* 662 */         Thread.currentThread().getName() }));
-/* 663 */       Thread.sleep(this.val$threadLocalRandom.nextInt(this.val$t) * 1000);
-/* 664 */       this.val$s.release();
-/*     */ 
-/* 666 */       ThreadTest.logger.info(MessageFormat.format(
-/* 667 */         "Available permits number:{0}", new Object[] { 
-/* 668 */         Integer.valueOf(this.val$s.availablePermits()) }));
+///* 659 */       this.val$s.acquire();
+///* 660 */       ThreadTest.logger.info(MessageFormat.format(
+///* 661 */         "Semaphore thread {0} was assigned!", new Object[] { 
+///* 662 */         Thread.currentThread().getName() }));
+///* 663 */       Thread.sleep(this.val$threadLocalRandom.nextInt(this.val$t) * 1000);
+///* 664 */       this.val$s.release();
+///*     */ 
+///* 666 */       ThreadTest.logger.info(MessageFormat.format(
+///* 667 */         "Available permits number:{0}", new Object[] { 
+///* 668 */         Integer.valueOf(this.val$s.availablePermits()) }));
 /*     */     }
-/*     */     catch (InterruptedException e) {
+/*     */     catch (Exception e) {
 /* 671 */       e.printStackTrace();
 /*     */     }
 /*     */   }

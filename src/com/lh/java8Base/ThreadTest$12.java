@@ -19,8 +19,8 @@
 /*     */       }
 /*     */     }
 /*     */ 
-/* 474 */     ThreadTest.logger.info(MessageFormat.format("Thread {0} has finished", new Object[] { 
-/* 475 */       Thread.currentThread().getName() }));
+/* 474 */   //  ThreadTest.logger.info(MessageFormat.format("Thread {0} has finished", new Object[] { 
+/* 475 */    //   Thread.currentThread().getName() }));
 /*     */   }
 /*     */ }
 

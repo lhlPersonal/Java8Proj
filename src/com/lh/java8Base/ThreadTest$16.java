@@ -17,22 +17,20 @@
 /*     */   {
 /*     */     try
 /*     */     {
-/* 607 */       Thread.sleep(this.val$threadLocalRandom.nextInt(10 * this.val$t) * 1000);
+/* 607 */     //  Thread.sleep(this.val$threadLocalRandom.nextInt(10 * this.val$t) * 1000);
 /*     */ 
-/* 609 */       ThreadTest.logger.info(
-/* 610 */         MessageFormat.format("CyclicBarrier thread name:{0},number of waiting:{1},number of part:{2}", new Object[] { 
-/* 611 */         Thread.currentThread().getName(), 
-/* 612 */         Integer.valueOf(this.val$cyclicBarrier.getNumberWaiting()), 
-/* 613 */         Integer.valueOf(this.val$cyclicBarrier.getParties()) }));
+/* 609 */     //  ThreadTest.logger.info(
+///* 610 */         MessageFormat.format("CyclicBarrier thread name:{0},number of waiting:{1},number of part:{2}", new Object[] { 
+///* 611 */         Thread.currentThread().getName(), 
+///* 612 */         Integer.valueOf(this.val$cyclicBarrier.getNumberWaiting()), 
+///* 613 */         Integer.valueOf(this.val$cyclicBarrier.getParties()) }));
 /*     */ 
-/* 615 */       this.val$cyclicBarrier.await();
+///* 615 */       this.val$cyclicBarrier.await();
 /*     */     }
-/*     */     catch (InterruptedException e) {
+/*     */     catch (Exception e) {
 /* 618 */       e.printStackTrace();
 /*     */     }
-/*     */     catch (BrokenBarrierException e) {
-/* 621 */       e.printStackTrace();
-/*     */     }
+/*     */     
 /*     */   }
 /*     */ }
 

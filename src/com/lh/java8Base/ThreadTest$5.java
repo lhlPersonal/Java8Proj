@@ -15,23 +15,24 @@ class ThreadTest$5
     int i = 0;
     while (true)
       try {
-        i = ((ArrayList)this.val$t.get()).size();
+        i = 0;
+        		//((ArrayList)this.val$t.get()).size();
 
-        continue;
-        System.out.println("wait");
-        Thread.sleep(1000L);
+        //continue;
+       // System.out.println("wait");
+       // Thread.sleep(1000L);
 
-        if (i >= 10)
+       // if (i >= 10)
         {
-          i = ((ArrayList)this.val$t.get()).size() - 1;
+//          i = ((ArrayList)this.val$t.get()).size() - 1;
+//
+//          String string = (String)((ArrayList)this.val$t.get()).remove(i);
+//
+//          System.out.println("remove str:" + string);
 
-          String string = (String)((ArrayList)this.val$t.get()).remove(i);
-
-          System.out.println("remove str:" + string);
-
-          Thread.sleep(1000L);
+        //  Thread.sleep(1000L);
         }
-      } catch (InterruptedException e) {
+      } catch (Exception e) {
         e.printStackTrace();
       }
   }

@@ -16,8 +16,8 @@
 /* 207 */     int i = 0;
 /*     */ 
 /* 209 */     while (i < 20) {
-/* 210 */       ((ArrayList)this.val$t.get()).add(MessageFormat.format("str{0}", new Object[] { Integer.valueOf(i) }));
-/* 211 */       System.out.println("add str:" + i);
+///* 210 */       ((ArrayList)this.val$t.get()).add(MessageFormat.format("str{0}", new Object[] { Integer.valueOf(i) }));
+///* 211 */       System.out.println("add str:" + i);
 /* 212 */       i++;
 /*     */       try {
 /* 214 */         Thread.sleep(1000L);

@@ -19,8 +19,8 @@
 /* 345 */       e.printStackTrace();
 /*     */     }
 /*     */ 
-/* 348 */     for (int j = 7; j < 20000; j++)
-/* 349 */       this.val$arrayList.addIfAbsent(Integer.valueOf(j));
+/* 348 */   //  for (int j = 7; j < 20000; j++)
+/* 349 */   //    this.val$arrayList.addIfAbsent(Integer.valueOf(j));
 /*     */   }
 /*     */ }
 

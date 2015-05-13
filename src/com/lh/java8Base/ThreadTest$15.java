@@ -16,11 +16,11 @@
 /* 580 */     int i = 0;
 /* 581 */     while (i < 10)
 /*     */       try {
-/* 583 */         ThreadTest.logger.info(MessageFormat.format("Take number:{0}", new Object[] { 
-/* 584 */           this.val$q.take() }));
+/* 583 */       //  ThreadTest.logger.info(MessageFormat.format("Take number:{0}", new Object[] { 
+/* 584 */       //    this.val$q.take() }));
 /* 585 */         i++;
 /*     */       }
-/*     */       catch (InterruptedException e) {
+/*     */       catch (Exception e) {
 /* 588 */         e.printStackTrace();
 /*     */       }
 /*     */   }

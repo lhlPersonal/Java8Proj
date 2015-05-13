@@ -7,7 +7,7 @@
 /*     */ {
 /*     */   public void run()
 /*     */   {
-/* 541 */     ThreadTest.logger.info("All cyclicBarrier threads were finished!!!!!");
+/* 541 */   //  ThreadTest.logger.info("All cyclicBarrier threads were finished!!!!!");
 /*     */   }
 /*     */ }
 

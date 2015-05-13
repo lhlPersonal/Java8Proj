@@ -15,11 +15,11 @@
 /* 559 */     int i = 0;
 /* 560 */     while (i < 10)
 /*     */       try {
-/* 562 */         int num = this.val$threadLocalRandom.nextInt(++i * 1000);
+/* 562 */     //    int num = this.val$threadLocalRandom.nextInt(++i * 1000);
 /*     */ 
-/* 565 */         this.val$q.put(Integer.valueOf(num));
+/* 565 */      //   this.val$q.put(Integer.valueOf(num));
 /*     */       }
-/*     */       catch (InterruptedException e)
+/*     */       catch (Exception e)
 /*     */       {
 /* 569 */         e.printStackTrace();
 /*     */       }
