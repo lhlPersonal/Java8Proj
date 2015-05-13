@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="default" extends="struts-default"> 
+<action name="chain" class="TestChainAction">
+	<result name="success">/chainTest.jsp</result>
+</action>
+
+	<!-- <action name="test" class="TestAction"> <result name="success">/index.jsp</result> 
+		转到指定Action链 <result name="expired" type="chain">chain</result> </action> -->
+</package>
+
+</struts>    
