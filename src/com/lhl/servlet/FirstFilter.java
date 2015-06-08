@@ -18,7 +18,7 @@ public class FirstFilter implements Filter {
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
-		request.setCharacterEncoding("utf-8");
+		// request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
 
 		chain.doFilter(request, response);
