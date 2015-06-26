@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project adv-config="true">
+  <add-on id="spring.mvc"/>
+  <add-on id="spring.web"/>
+  <add-on id="cxf.support"/>
+  <disabled-container path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0"/>
+  <disabled-container path="com.genuitec.runtime.library/com.genuitec.spring.webflow_2.3"/>
+  <disabled-container path="com.genuitec.runtime.library/com.genuitec.spring.security_3.1"/>
+  <container path="com.genuitec.runtime.library/com.genuitec.spring_3.1">
+    <disable name="commons-beanutils-1.7.0.jar" type="jar"/>
+    <disable name="commons-fileupload-1.2.jar" type="jar"/>
+    <disable name="commons-httpclient-3.1.jar" type="jar"/>
+    <disable name="org.springframework.jms-3.1.1.RELEASE.jar" type="jar"/>
+    <disable name="org.springframework.oxm-3.1.1.RELEASE.jar" type="jar"/>
+    <disable name="org.springframework.web.portlet-3.1.1.RELEASE.jar" type="jar"/>
+  </container>
+</project>

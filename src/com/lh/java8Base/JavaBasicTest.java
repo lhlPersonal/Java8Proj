@@ -2,10 +2,20 @@ package com.lh.java8Base;
 
 import java.io.PrintStream;
 import java.util.Comparator;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import org.apache.commons.validator.Var;
 
 public class JavaBasicTest {
 	public static void main(String[] args) {
-		staticFieldTest();
+		ExecutorService es = Executors.newCachedThreadPool();
+
+		for (int i = 0; i < 101; i++) {
+			es.submit(() -> {
+				run();
+			});
+		}
 	}
 
 	public static void staticFieldTest() {
@@ -13,6 +23,16 @@ public class JavaBasicTest {
 		System.out.println("After echo");
 		System.out.println("After field access");
 		System.out.println(B.y + A1.x);
+	}
+
+	private static int ticket = 100;
+
+	public static synchronized void run() {
+		if (ticket > 0) {
+			System.out.println(ticket + " is saled by "
+					+ Thread.currentThread().getName());
+			ticket--;
+		}
 	}
 
 	public static int f(String s) {

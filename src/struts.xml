@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-<package name="default" extends="struts-default"> 
-<action name="chain" class="TestChainAction">
-	<result name="success">/chainTest.jsp</result>
-</action>
-
-	<!-- <action name="test" class="TestAction"> <result name="success">/index.jsp</result> 
-		转到指定Action链 <result name="expired" type="chain">chain</result> </action> -->
-</package>
-
+	<!-- 把它设置为开发模式，发布时要设置为false -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 设置在class被修改时是否热加载，发布时要设置为false -->
+	<constant name="struts.convention.classes.reload" value="true" />
+	<package name="default" extends="struts-default">
+		<action name="test" class="com.lhl.strut2.TestAction">
+			<result name="success">page/index.jsp</result>
+		</action>
+	</package>
 </struts>    

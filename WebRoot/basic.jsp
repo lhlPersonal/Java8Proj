@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*"%>
+<%@ page language="java" pageEncoding="utf-8"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -11,7 +11,8 @@
 <head>
 <base href="<%=basePath%>">
 
-<title>My JSP 'index.jsp' starting page</title>
+<title>My JSP 'chainTest.jsp' starting page</title>
+
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -20,28 +21,21 @@
 <!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-<script type="text/javascript">
-	function doSubmit() {
-		$.ajax({
-			url : "firstServlet",
-			type : "post",
-			dataType : "text",
-			data : {
-				"p" : $("#name").val()
-			},
-			success : function(data) {
-				alert(data);
-			}
-		});
-	}
-</script>
 </head>
-
 <body>
-	<input type="text" id="name">
-	<button type="button" onclick="doSubmit()">commit</button>
+	aaaaaa
+	<!-- ------jsp forward:forward页面替代当前页面------- -->
+	<%-- <jsp:forward page="test.jsp">
+		<jsp:param value="this is param one" name="param1" />
+	</jsp:forward> --%>
+	<!-- ------jsp include:插入页面内容------- -->
+	<jsp:include page="test.jsp">
+		<jsp:param value="this is param one" name="param1" />
+	</jsp:include>
+
+
+
 </body>
 </html>
-<script type="text/javascript" src="js/jquery.js">
-	
-</script>
+
+\d{1-9}
