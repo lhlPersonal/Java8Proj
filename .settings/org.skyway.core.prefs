@@ -1,5 +1,6 @@
 #org.skyway.core settings
-#Fri Jun 26 18:03:38 CST 2015
+#Fri Jun 26 18:35:14 CST 2015
 version=11.0.1.me201405280815
+customization.specification=
 models.folder.name=.springDSL
 initialized=true
