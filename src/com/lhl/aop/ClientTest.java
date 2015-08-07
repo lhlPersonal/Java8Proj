@@ -1,17 +1,12 @@
 package com.lhl.aop;
 
-import java.util.List;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class ClientTest {
 
 	public static void main(String[] args) {
-
 		loadSpringXml();
-
 	}
 
 	@SuppressWarnings({ "resource", "unused" })

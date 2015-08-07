@@ -18,11 +18,14 @@ public class JavaBasicTest {
 		}
 	}
 
+	
+
 	public static void staticFieldTest() {
 		System.out.println("Starting Main");
 		System.out.println("After echo");
 		System.out.println("After field access");
 		System.out.println(B.y + A1.x);
+
 	}
 
 	private static int ticket = 100;
